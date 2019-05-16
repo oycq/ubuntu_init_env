@@ -1,0 +1,26 @@
+install pytorch
+sudo pip install torch torchvision
+sudo pip3 install torch torchvision
+
+install nvidia-driver
+sudo apt-get install nvidia-driver-390
+
+install cuda
+sudo apt install nvidia-cuda-toolkit gcc-6
+nvcc --version
+
+reboot!
+
+fan speed control
+nvidia-settings -a '[gpu:0]/GPUFanControlState=1'
+nvidia-xconfig --cool-bits=4
+
+test
+sudo dmidecode --type memory
+nvidia-smi
+git clone git@github.com:oycq/pytorch-gpu-benchmark.git
+git checkout -t remotes/origin/oycq
+sudo apt-get install python3-tk
+sudo apt-get install python3-pandas
+cd pytorch-gpu-benchmark
+python3 benchmark_models.py --BATCH_SIZE 20  --NUM_TEST 50  #(defult)
