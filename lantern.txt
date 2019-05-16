@@ -1,0 +1,3 @@
+https://github.com/getlantern/download
+cd ~/Downloads
+sudo apt install 
