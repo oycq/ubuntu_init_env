@@ -6,5 +6,4 @@ https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.ht
 
 buy their keys in taobao
 vmware:   VZ70U-0NW54-H8ENY-3QPXT-Y6UTD
-win10PRO: K93GD-CBR4B-VW6HH-9P4V6-62VCQK93GD-CBR4B-VW6HH-9P4V6-62VCQ
-if error code end with 6506 028 efd ee2 ee7 retype it again(connect busy)
+win10PRO: W269N-WFGWX-YVC9B-4J6C9-T83GX
