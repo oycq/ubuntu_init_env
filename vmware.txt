@@ -1,0 +1,10 @@
+use windows' install tool to download the .iso file
+https://www.microsoft.com/zh-cn/software-download/windows10
+
+download vmware 15 pro
+https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html
+
+buy their keys in taobao
+vmware:   VZ70U-0NW54-H8ENY-3QPXT-Y6UTD
+win10PRO: K93GD-CBR4B-VW6HH-9P4V6-62VCQK93GD-CBR4B-VW6HH-9P4V6-62VCQ
+if error code end with 6506 028 efd ee2 ee7 retype it again(connect busy)
