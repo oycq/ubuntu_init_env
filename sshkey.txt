@@ -1,3 +1,6 @@
 ssh-keygen -t rsa -C "YourComputerName"
 cat .ssh/id_rsa.pub
 
+git config --global credential.helper store
+
+
