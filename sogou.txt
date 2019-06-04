@@ -3,7 +3,9 @@ https://pinyin.sogou.com/linux/?r=pinyin
 
 install fcitx
 sudo apt-get install fcitx-googlepinyin
+sudo reboot now
 
 config fcitx
 command line: fcitx-configtool
 without "Only show current language"
+ctrl-space
