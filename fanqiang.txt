@@ -3,7 +3,7 @@ https://github.com/getlantern/download
 cd ~/Downloads
 sudo apt install 
 
-shadowsocks
+shadowsocks(sys setting no proxy)
 https://github.com/shadowsocks/shadowsocks-qt5/releases
 cd ~/Downloads
 chmod a+x Shadowsocks-Qt5-x86_64.AppImage
