@@ -1,0 +1,24 @@
+1.apt source:
+sudo vim /etc/apt/sources.list
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+
+2.pip source
+sudo apt install python-pip
+pip install pip -U
+sudo vim /usr/bin/pip
+"from pip import main" -> "from pip._internal import main"
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+3.github proxy
+git config --global http.proxy 'socks5://127.0.0.1:1080' 
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+vim ~/.gitconfig
