@@ -68,14 +68,23 @@ nnoremap <C-h> <C-B>
 nnoremap <C-l> <C-F>
 
 
-
 install vundle
 (github see https://github.com/VundleVim/Vundle.vim)
 mkdir -p .vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-
 install YCM youcompleteme
 (github see https://github.com/Valloric/YouCompleteMe)
 sudo apt install build-essential cmake python3-dev
 git clone --depth=1 https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
+cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
+python3 install.py --clang-completer
+ 
+solarized
+(github see https://github.com/altercation/vim-colors-solarized)
+mkdir ~/.vim/colors
+cd ~/.vim/colors
+git clone git://github.com/altercation/vim-colors-solarized.git
+cp vim-colors-solarized/colors/solarized.vim .
+
