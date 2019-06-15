@@ -1,3 +1,6 @@
+sudo apt remove vim
+sudo apt install vim-gtk
+
 vim .vimrc:
 
 filetype plugin on
@@ -67,6 +70,8 @@ nnoremap <C-k> <C-y>
 nnoremap <C-h> <C-B>
 nnoremap <C-l> <C-F>
 colors/vim-colors-solar
+set clipboard=unnamedplus
+
 
 install vundle
 (github see https://github.com/VundleVim/Vundle.vim)
