@@ -1,3 +1,5 @@
-startup
+ubuntu:startup
+i3: vim /home/oycq/.config/i3/config exec 
+
 /home/oycq/shadowsocks/Shadowsocks-Qt5-3.0.1-x86_64.AppImage >/dev/null 2 2>&1 &
 synergy
