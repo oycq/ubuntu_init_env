@@ -9,3 +9,4 @@ cd ~/Downloads
 chmod a+x Shadowsocks-Qt5-x86_64.AppImage
 ./Shadowsocks-Qt5-x86_64.AppImage
 107.191.55.100:12345 1234qwer
+aes-256-cfb
