@@ -17,3 +17,8 @@ bindsym $mod+Shift+v split h
 
 # split in vertical orientation
 bindsym $mod+v split v
+
+voice:
+#alsamixer
+bindsym XF86AudioRaiseVolume exec amixer set Master playback 5+
+bindsym XF86AudioLowerVolume exec amixer set Master playback 5-
