@@ -1,6 +1,6 @@
 synergy
 ubuntu:https://drive.google.com/open?id=1VGjbpAVewfJMN0Z-zzmAYAlCQ6OGiL9x
-windows:https://drive.google.com/open?id=1JtoWtAJ-dqV3BwwRySjwdMi4Wd_I0f-u
+windows:https://drive.google.com/opefn?id=1JtoWtAJ-dqV3BwwRySjwdMi4Wd_I0f-u
 7B76313B70726F3B6368656E63206368753B313B3331333139393831314071712E636F6D3B3B3B7D
 
 winscp
@@ -9,3 +9,8 @@ ubuntu:sudo apt install openssh-server
 
 MobaXterm
 
+zeroTier:
+ubuntu:curl -s https://install.zerotier.com/ | sudo bash
+sudo zerotier-cli join 1c33c1ced0ae6362
+click it in the website
+(sudo service zerotier-one restart)
