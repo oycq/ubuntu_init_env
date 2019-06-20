@@ -1,5 +1,8 @@
 sudo apt-get install i3
 
+sudo apt install -y gnome-flashback
+https://github.com/glsorre/i3-gnome
+
 vim /home/oycq/.config/i3/config
 
 bindsym $mod+h focus left
