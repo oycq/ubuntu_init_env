@@ -3,7 +3,13 @@ sudo pip install torch torchvision
 sudo pip3 install torch torchvision
 
 install nvidia-driver
+(1070)
 sudo apt-get install nvidia-driver-390
+sudo reboot now
+(2070)
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt install nvidia-driver-410
+sudo reboot now
 
 install cuda
 sudo apt install nvidia-cuda-toolkit gcc-6
