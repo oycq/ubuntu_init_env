@@ -1,6 +1,5 @@
 install pytorch
-sudo pip install torch torchvision
-sudo pip3 install torch torchvision
+https://pytorch.org
 
 install nvidia-driver
 (1070)
@@ -12,10 +11,16 @@ sudo apt install nvidia-driver-410
 sudo reboot now
 
 install cuda
+(1070)
 sudo apt install nvidia-cuda-toolkit gcc-6
 nvcc --version
-
-reboot!
+reboot
+(2070)
+https://developer.nvidia.com/cuda-10.0-download-archive
+follow the instruction
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+nvcc -V
+reboot
 
 fan speed control
 nvidia-settings -a '[gpu:0]/GPUFanControlState=1'
