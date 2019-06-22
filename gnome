@@ -4,3 +4,5 @@ Move Window one workspace down Ctrl+Alt+j
 Move windos one workspace up Ctrl+Alt+k
 Switch windows directly Super+Space
 close windows Super+Shift+Q
+hide windows disable
+trigle full screen mode Super+f
