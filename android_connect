@@ -1,0 +1,28 @@
+Download vysor for chrome
+https://www.vysor.io/
+
+change it to pro version
+sudo find / -name 'uglify.js'
+
+/Account
+function() {
+        var e, t = !1, // e = 1, t = 1,  
+        o = !1,
+        i = "Account Management";
+        S.prototype.refresh = function(e, t) {
+            console.log("interactive", t),
+            this.refreshInternal(e, t).async()
+        },
+
+/getManageData
+e.contentWindow._lm = {
+           _il:Te.a()，    //_il:true,
+           _ilc: We.c(),
+           _cl: We.b.bind(We),
+           _md: We.getManageData(),
+           refresh: We.refresh.bind(We),
+           startPurchase: We.startPurchase.bind(We)
+           
+Huawei:
+open debug mode
+adi when charge
