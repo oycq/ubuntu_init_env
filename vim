@@ -71,6 +71,7 @@ nnoremap <C-h> <C-B>
 nnoremap <C-l> <C-F>
 colors/vim-colors-solar
 set clipboard=unnamedplus
+set completeopt-=preview
 
 
 install vundle
