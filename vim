@@ -71,6 +71,8 @@ nnoremap <C-h> <C-B>
 nnoremap <C-l> <C-F>
 set clipboard=unnamedplus
 set completeopt-=preview
+map <C-]> :YcmCompleter GoTo<CR>
+map <C-\> :YcmCompleter GetDoc<CR>
 
 
 install vundle
