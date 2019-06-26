@@ -73,6 +73,7 @@ set clipboard=unnamedplus
 set completeopt-=preview
 map <C-]> :YcmCompleter GoTo<CR>
 map <C-\> :YcmCompleter GetDoc<CR>
+map <C-f> :w \| sh<CR>
 
 
 install vundle
@@ -96,4 +97,3 @@ git clone git://github.com/altercation/vim-colors-solarized.git
 cp vim-colors-solarized/colors/solarized.vim .
 
 using vimium
-map <C-f> :w<CR> :sh<CR>
