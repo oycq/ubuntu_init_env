@@ -1,0 +1,34 @@
+1.sudo vim /etc/apt/sources.list
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+
+2.sudo apt update
+
+3.sudo apt install openssh-server
+
+4.gpu
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt install nvidia-driver-410
+sudo reboot now
+
+cuda
+https://developer.nvidia.com/cuda-10.0-download-archive
+follow the instruction
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+nvcc -V
+reboot
+
+6.pip source
+sudo apt install python-pip
+pip install pip -U
+sudo vim /usr/bin/pip
+"from pip import main" -> "from pip._internal import main"
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
