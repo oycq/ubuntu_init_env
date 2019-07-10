@@ -14,3 +14,6 @@ ubuntu:curl -s https://install.zerotier.com/ | sudo bash
 sudo zerotier-cli join 1c33c1ced0ae6362
 click it in the website
 (sudo service zerotier-one restart)
+
+Folder sharing:
+sudo smbpasswd -a oycq
