@@ -1,5 +1,22 @@
 cv2
 pip install opencv-contrib-python
+build from source:
+https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/
+
+cmake \
+    -D ENABLE_PRECOMPILED_HEADERS=OFF \
+    -D WITH_OPENCL=OFF \
+    -D WITH_CUDA=OFF \
+    -D WITH_CUFFT=OFF \
+    -D WITH_CUBLAS=OFF \
+    -D CMAKE_BUILD_TYPE=RELEASE \
+    -D CMAKE_INSTALL_PREFIX=/usr/local \
+    -D INSTALL_PYTHON_EXAMPLES=OFF \
+    -D INSTALL_C_EXAMPLES=OFF \
+    -D PYTHON_EXECUTABLE=/usr/bin/python3.5 \
+    -D BUILD_EXAMPLES=OFF ..
+
+remember: ldconfig
 
 screen record
 sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
