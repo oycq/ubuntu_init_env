@@ -24,10 +24,10 @@ deb-src http://mirrors.ustc.edu.cn/ubuntu-ports/ xenial-updates main multiverse 
 
 2.pip source
 sudo apt install python-pip
-pip install pip -U
-sudo vim /usr/bin/pip
-"from pip import main" -> "from pip._internal import main"
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+mkdir ~/.pip
+vim ~/.pip/pip.conf
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
 3.github proxy
 git config --global http.proxy 'socks5://127.0.0.1:1080' 
