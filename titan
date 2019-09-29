@@ -13,18 +13,29 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted univer
 2.sudo apt update
 
 3.sudo apt install openssh-server
+  ifconfig
+
+3.download from BaiduYun
 
 4.gpu
-sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo add-apt-repository ppa:graphics-drivers/ppa\
+sudo apt update
 sudo apt install nvidia-driver-410
 sudo reboot now
 
-cuda
-https://developer.nvidia.com/cuda-10.0-download-archive
-follow the instruction
+5.cuda
+chmod +x cuda_10.0.130_410.48_linux.run
+sudo ./cuda_10.0.130_410.48_linux.runak
+
 export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
 nvcc -V
 reboot
+
+6.vim
+sudo apt install vim-gtk
+sudo apt install python3-dev
+cd .vim/bundle/YouCompleteMe
+python3 install.py
 
 6.pip source
 sudo apt install python-pip
@@ -32,3 +43,5 @@ pip install pip -U
 sudo vim /usr/bin/pip
 "from pip import main" -> "from pip._internal import main"
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+6.
