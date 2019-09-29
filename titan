@@ -16,32 +16,44 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted univer
   ifconfig
 
 3.download from BaiduYun
-
-4.gpu
-sudo add-apt-repository ppa:graphics-drivers/ppa\
-sudo apt update
-sudo apt install nvidia-driver-410
-sudo reboot now
+cuda_10.0.130_410.48_linux.run
+vim.rar
+torch-1.2.0-cp36-cp36m-manylinux1_x86_64.whl
+sogoupinyin_2.2.0.0108_amd64.deb
 
 5.cuda
+sudo apt install build-essential gcc
 chmod +x cuda_10.0.130_410.48_linux.run
-sudo ./cuda_10.0.130_410.48_linux.runak
-
-export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
-nvcc -V
-reboot
+sudo ./cuda_10.0.130_410.48_linux.run
 
 6.vim
-sudo apt install vim-gtk
-sudo apt install python3-dev
+unzip vim.rar
+sudo apt install vim-gtk python3-dev cmake
 cd .vim/bundle/YouCompleteMe
 python3 install.py
 
 6.pip source
-sudo apt install python-pip
-pip install pip -U
-sudo vim /usr/bin/pip
-"from pip import main" -> "from pip._internal import main"
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+sudo apt install python3-pip
+mkdir ~/.pip
+vim ~/.pip/pip.conf
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
-6.
+===============================================================
+8.sougou
+sudo apt-get install fcitx-googlepinyin
+sudo apt install ./sogoupinyin_2.2.0.0108_amd64.deb
+sudo reboot now
+config fcitx
+command line: fcitx-configtool
+without "Only show current language"
+
+7.opencv
+sudo pip3 install opencv-contrib-python==3.4.6.27
+
+
+8.torch
+sudo pip3 install ./torch-1.2.0-cp36-cp36m-manylinux1_x86_64.whl
+sudo pip3 install torchvision
+
+
