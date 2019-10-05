@@ -58,3 +58,6 @@ sudo pip3 install torchvision
 sudo nano /etc/gdm3/custom.conf
 sudo apt install ./VNC-Server-6.6.0-Linux-x64.deb
 https://manage.realvnc.com/en/
+
+10.PointGrey
+https://www.flir.com/products/spinnaker-sdk/
