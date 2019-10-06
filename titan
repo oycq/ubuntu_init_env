@@ -33,37 +33,43 @@ sudo apt install vim-gtk python3-dev cmake
 cd .vim/bundle/YouCompleteMe
 python3 install.py
 
-6.pip source
+7.pip source
 sudo apt install python3-pip
 mkdir ~/.pip
 vim ~/.pip/pip.conf
 [global]
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
+8.short cut(6)
+Lauch terminal
+Move to workspace above/below
+Move window one workspace down/up
+switch windows
+
 ===============================================================
-8.sougou
+sougou
 sudo apt-get install fcitx-googlepinyin
 sudo apt install ./sogoupinyin_2.2.0.0108_amd64.deb
 sudo reboot now
 fcitx-configtool
 
-7.opencv
+opencv
 sudo pip3 install opencv-contrib-python==3.4.6.27
 
-8.torch
+torch
 sudo pip3 install ./torch-1.2.0-cp36-cp36m-manylinux1_x86_64.whl
 sudo pip3 install torchvision
 
-9.VNC
+VNC
 sudo nano /etc/gdm3/custom.conf
 sudo apt install ./VNC-Server-6.6.0-Linux-x64.deb
 https://manage.realvnc.com/en/
 
-10.PointGrey
+PointGrey
 https://www.flir.com/products/spinnaker-sdk/
 apt install, then pip install
 
-11.ros
+ros
 sudo sh -c '. /etc/lsb-release && echo "deb http://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/ $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 sudo apt update
