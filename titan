@@ -40,11 +40,12 @@ vim ~/.pip/pip.conf
 [global]
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
-8.short cut(6)
+8.shortcut(7)
 Lauch terminal
 Move to workspace above/below
 Move window one workspace down/up
 switch windows
+close window
 
 ===============================================================
 sougou
