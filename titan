@@ -80,3 +80,8 @@ sudo rosdep init
 rosdep update
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+
+adduser
+adduser username
+deluser username
+usermod -aG sudo username
