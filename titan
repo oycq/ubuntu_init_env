@@ -12,13 +12,12 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restri
 
 3.sudo apt install openssh-server
 
-４.sudo nano /etc/ssh/sshd_config
+４.sudo vi /etc/ssh/sshd_config
 Match group sftp
 ChrootDirectory /home
 X11Forwarding no
 AllowTcpForwarding no
 ForceCommand internal-sftp
-ifconfig
 
 3.download from BaiduYun
 cuda_10.0.130_410.48_linux.run
