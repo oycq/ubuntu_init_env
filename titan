@@ -12,24 +12,23 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restri
 
 3.sudo apt install openssh-server
 
-４.sudo vi /etc/ssh/sshd_config
+４.sudo vim /etc/ssh/sshd_config
 Match group sftp
 ChrootDirectory /home
 X11Forwarding no
 AllowTcpForwarding no
 ForceCommand internal-sftp
 
-3.download from BaiduYun
-cuda_10.0.130_410.48_linux.run
-vim.rar
-torch-1.2.0-cp36-cp36m-manylinux1_x86_64.whl
-sogoupinyin_2.2.0.0108_amd64.deb
-VNC-Server-6.6.0-Linux-x64.deb
 
-5.cuda
-sudo apt install build-essential gcc
-chmod +x cuda_10.0.130_410.48_linux.run
-sudo ./cuda_10.0.130_410.48_linux.run
+3.download from BaiduYun
+
+5.gpu
+sudo apt install nvidia-driver-435
+reboot
+sudo dpkg -i cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64.deb
+sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub
+sudo apt-get update
+sudo apt-get install cuda
 
 6.vim
 unzip vim.zip
