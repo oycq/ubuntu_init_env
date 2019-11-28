@@ -23,6 +23,7 @@ ForceCommand internal-sftp
 3.download from BaiduYun
 
 5.gpu
+sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt install nvidia-driver-410
 reboot
 sudo dpkg -i cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64.deb
