@@ -71,7 +71,16 @@ sudo apt install ./VNC-Server-6.6.0-Linux-x64.deb
 https://manage.realvnc.com/en/
 
 PointGrey
-https://www.flir.com/products/spinnaker-sdk/
+cd pointgrey
+sudo apt install libgtkmm-2.4-dev
+~/pointgrey/spinnaker-1.26.0.31-amd64
+./install_spinnaker.sh
+sudo vim /etc/default/grub 
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.usbfs_memory_mb=1000"
+sudo update-grub
+reboot
+
+
 apt install, then pip install
 
 ros
