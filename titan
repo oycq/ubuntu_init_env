@@ -79,6 +79,8 @@ sudo vim /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.usbfs_memory_mb=1000"
 sudo update-grub
 reboot
+unzip
+sudo pip install ./spinnaker_python-1.26.0.31-cp27-cp27mu-linux_x86_64.whl
 
 
 apt install, then pip install
