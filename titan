@@ -103,3 +103,7 @@ usermod -aG sudo username
 
 synergy
 7B76313B70726F3B6368656E63206368753B313B3331333139393831314071712E636F6D3B3B3B7D
+
+github sshkey:
+ssh-keygen -t rsa -b 4096 -C "nuc"
+cat ~/.ssh/id_rsa.pub
