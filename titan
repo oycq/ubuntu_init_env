@@ -33,7 +33,7 @@ sudo apt-get install cuda
 
 6.vim
 unzip vim.zip
-sudo apt install vim-gtk python3-dev cmake
+sudo apt install vim-gtk python3-dev cmake build-essential
 cd .vim/bundle/YouCompleteMe
 python3 install.py
 
