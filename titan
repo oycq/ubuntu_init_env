@@ -116,3 +116,6 @@ synergy
 github sshkey:
 ssh-keygen -t rsa -b 4096 -C "nuc"
 cat ~/.ssh/id_rsa.pub
+
+numpy multicores
+https://roman-kh.github.io/numpy-multicore/
